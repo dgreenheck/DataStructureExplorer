@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LinkedListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class LinkedListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate {
 
     // Data model
     var linkedList: LinkedList<String> = .init()
@@ -21,12 +21,13 @@ class LinkedListViewController: UIViewController, UITableViewDataSource, UITable
         super.viewDidLoad()
         
         // Add some test values to the list
-        linkedList.append(.init("dog"))
-        linkedList.append(.init("cat"))
-        linkedList.append(.init("mouse"))
+        _ = linkedList.append(.init("dog"))
+        _ = linkedList.append(.init("cat"))
+        _ = linkedList.append(.init("mouse"))
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        self.valueTextField.delegate = self
     }
     
     @IBAction func insertButtonPressed(_ sender: Any) {
@@ -47,23 +48,6 @@ class LinkedListViewController: UIViewController, UITableViewDataSource, UITable
             let node = LinkedListNode<String>(text)
             _ = self.linkedList.append(node)
             tableView.reloadData()
-        }
-    }
-    
-    @IBAction func showNodeInfoButtonPressed(_ sender: Any) {
-        // Check to see if node is selected
-        guard let nodeIndex = tableView.indexPathForSelectedRow?.row else { return }
-        
-        // Get node at index
-        if let node = linkedList.get(at: nodeIndex) {
-            var message: String = "Index: \(nodeIndex)\n"
-            message += "Value: \(node.value)\n"
-            message += "Previous Node Value: \(node.prev?.value ?? "nil")\n"
-            message += "Next Node Value: \(node.next?.value ?? "nil")\n"
-            
-            let alert = UIAlertController(title: "Node Info", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alert, animated: true)
         }
     }
     
@@ -90,9 +74,22 @@ class LinkedListViewController: UIViewController, UITableViewDataSource, UITable
         return cell
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        // Close keyboard if open
-        view.endEditing(true)
-        super.touchesBegan(touches, with: event)
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
+    
+    func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
+        // Get node at index
+        if let node = linkedList.get(at: indexPath.row) {
+            var message: String = "Index: \(indexPath.row)\n"
+            message += "Value: \(node.value)\n"
+            message += "Previous Node Value: \(node.prev?.value ?? "nil")\n"
+            message += "Next Node Value: \(node.next?.value ?? "nil")\n"
+            
+            let alert = UIAlertController(title: "Node Info", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        }
     }
 }

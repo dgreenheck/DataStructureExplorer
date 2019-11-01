@@ -12,13 +12,15 @@
 
 import Foundation
 
+/// A doubly-linked list
 public class LinkedList<T> {
-    // The first element in the list
+    /// The last element in the list. If list is empty, value of member is nil.
     public var head: LinkedListNode<T>?
-    // The last element in the list
+    /// The last element in the list. If list is empty, value of member is nil.
     public var tail: LinkedListNode<T>?
-    // Number of elements in the list
+    /// Internal variable for number of elements in the list
     private var _count: Int = 0
+    /// Number of elements in the list
     public var count: Int {
         get {
             return _count
@@ -79,6 +81,7 @@ public class LinkedList<T> {
     ///
     /// - parameter at: The index of the node to retrieve.
     /// - returns: LinkedListNode<T> at the specified index. If index out of bounds, returns nil.
+    ///
     /// Time Complexity
     ///  - index == 0 : O(1)
     ///  - index == (size-1) : O(1)
@@ -111,6 +114,8 @@ public class LinkedList<T> {
     
     /// Insert the node at the specified index.
     ///
+    /// - parameter node: The node to insert in the list
+    /// - parameter at: The index to insert the node at
     /// - returns: The inserted node if the insertion was successful. Otherwise, returns nil.
     ///
     /// Time Complexity
@@ -123,7 +128,7 @@ public class LinkedList<T> {
         // Verify index is in bounds
         guard (index <= self.count) else { return nil }
         
-        // Direct access to head node [O(1)]
+        // Direct access to head node
         var insertedNode: LinkedListNode<T>? = nil
         if index == 0 {
             let oldHead = self.head
@@ -135,7 +140,7 @@ public class LinkedList<T> {
             insertedNode = node
             self._count += 1
         }
-        // Direct access to tail node [O(1)]
+        // Direct access to tail node
         else if index == self.count {
             // Identical to append
             insertedNode = self.append(node)
@@ -160,6 +165,11 @@ public class LinkedList<T> {
     ///
     /// - parameter at: The index to remove at
     /// - returns:The node at the given index. If the index is out of bounds, returns nil.
+    ///
+    /// Time Complexity
+    ///  - index == 0 : O(1)
+    ///  - index == (size-1) : O(1)
+    ///  - else :  O(N)
     public func remove(at index: Int) -> LinkedListNode<T>? {
         // Verify index is non-negative
         guard (index >= 0) else { return nil }
@@ -173,7 +183,7 @@ public class LinkedList<T> {
                 self.head = nil
                 self.tail = nil
             }
-            // First itemi n the list
+            // First item in the list
             else if nodeToRemove.next != nil && nodeToRemove.prev == nil {
                 nodeToRemove.next?.prev = nil
             }
@@ -230,7 +240,7 @@ public class LinkedList<T> {
     }
 }
 
-/// Node in a linked list
+/// A linked list node
 public class LinkedListNode<T> {
     /// The value of the node
     public var value: T
