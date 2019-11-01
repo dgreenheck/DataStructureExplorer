@@ -310,47 +310,47 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="20l-mU-ckZ">
-                                <rect key="frame" x="16" y="16" width="343" height="658"/>
+                                <rect key="frame" x="16" y="16" width="327" height="658"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMe-Qs-vBs" userLabel="Content">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="921.33333333333337"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="981.66666666666663"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="a8j-SJ-qM1">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="921.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="981.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linked List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6t-bp-dHT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="40.666666666666664"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="40.666666666666664"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viW-2F-xGA" userLabel="Separator">
-                                                        <rect key="frame" x="0.0" y="50.666666666666657" width="343" height="1"/>
+                                                        <rect key="frame" x="0.0" y="50.666666666666657" width="327" height="1"/>
                                                         <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Qmb-FD-dAs"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnQ-TC-xpC">
-                                                        <rect key="frame" x="0.0" y="61.666666666666664" width="343" height="20.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="61.666666666666664" width="327" height="20.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQn-Zd-ZDn">
-                                                        <rect key="frame" x="0.0" y="91.999999999999986" width="343" height="182.66666666666663"/>
-                                                        <string key="text">A linked list represents a sequence of nodes. A linked list can be singly-linked (a node only maintains a reference to the next node) or doubly-linked (a node maintains references to both the previous and next nodes).  A linked list is useful for applications that require constant item insertion at the beginning and end of the list.</string>
+                                                        <rect key="frame" x="0.0" y="92" width="327" height="324.66666666666669"/>
+                                                        <mutableString key="text">A linked list represents a sequence of nodes, much like links in a chain. Each node in the list maiwantains references to its adjacent nodes. Contrary to an array which has a constant lookup time for any index, lookup of an item in a linked list requires starting at either the beginning or end of the list and traversing through each node until the desired index is reached.  A linked list is useful for applications that require constant item insertion at the beginning and end of the list. The is useful for dynamic lists when the initial size of the list is unknown and/or may vary significantly.</mutableString>
                                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Member Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mma-WV-CVK">
-                                                        <rect key="frame" x="0.0" y="284.66666666666669" width="343" height="20.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="426.66666666666663" width="327" height="20.333333333333314"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXm-92-EIV">
-                                                        <rect key="frame" x="0.0" y="315" width="343" height="40.666666666666686"/>
+                                                        <rect key="frame" x="0.0" y="457" width="327" height="40.666666666666686"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="- ">
                                                                 <attributes>
@@ -388,13 +388,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUX-ku-Mg4">
-                                                        <rect key="frame" x="0.0" y="365.66666666666669" width="343" height="20.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="507.66666666666657" width="327" height="20.333333333333314"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pCY-NS-EDx">
-                                                        <rect key="frame" x="0.0" y="396" width="343" height="201"/>
+                                                        <rect key="frame" x="0.0" y="538" width="327" height="220.66666666666663"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="- ">
                                                                 <attributes>
@@ -557,13 +557,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Complexity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hma-1O-GgX" userLabel="Time Complexity">
-                                                        <rect key="frame" x="0.0" y="607" width="343" height="20.333333333333371"/>
+                                                        <rect key="frame" x="0.0" y="768.66666666666663" width="327" height="20.333333333333371"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-35-e5J">
-                                                        <rect key="frame" x="0.0" y="637.33333333333337" width="343" height="182.66666666666663"/>
+                                                        <rect key="frame" x="0.0" y="799" width="327" height="182.66666666666663"/>
                                                         <attributedString key="attributedText">
                                                             <fragment content="Insertion">
                                                                 <attributes>
@@ -598,18 +598,6 @@
                                                         </attributedString>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Space Complexity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrv-vX-6nA" userLabel="Time Complexity">
-                                                        <rect key="frame" x="0.0" y="830" width="343" height="20.333333333333371"/>
-                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A linked list containing N elements has a space complexity of O(N). " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qi-Gg-vTb">
-                                                        <rect key="frame" x="0.0" y="860.33333333333337" width="343" height="61"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -635,7 +623,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="DNP-H6-n4D" firstAttribute="trailing" secondItem="20l-mU-ckZ" secondAttribute="trailing" constant="16" id="FK9-tC-5oJ"/>
+                            <constraint firstItem="DNP-H6-n4D" firstAttribute="trailing" secondItem="20l-mU-ckZ" secondAttribute="trailing" constant="32" id="FK9-tC-5oJ"/>
                             <constraint firstItem="DNP-H6-n4D" firstAttribute="bottom" secondItem="20l-mU-ckZ" secondAttribute="bottom" constant="16" id="c1P-8S-VB2"/>
                             <constraint firstItem="20l-mU-ckZ" firstAttribute="top" secondItem="DNP-H6-n4D" secondAttribute="top" constant="16" id="hmf-Ed-Gcj"/>
                             <constraint firstItem="20l-mU-ckZ" firstAttribute="leading" secondItem="DNP-H6-n4D" secondAttribute="leading" constant="16" id="y63-jd-ijh"/>
@@ -856,7 +844,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Stack" largeTitleDisplayMode="never" id="5V2-uR-MTb">
                         <barButtonItem key="backBarButtonItem" title="Back" id="ATl-5k-le0"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="x2l-AM-BQV"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="info.circle" catalog="system" id="x2l-AM-BQV">
+                            <connections>
+                                <segue destination="E84-nG-aFz" kind="show" id="ywJ-7Y-D1u"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="outputTextField" destination="LFO-is-h1Y" id="pU5-OO-iIL"/>
@@ -868,6 +860,167 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ymg-Iv-q5w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2688.8000000000002" y="807.63546798029563"/>
+        </scene>
+        <!--Stack Info View Controller-->
+        <scene sceneID="dw1-qy-cKd">
+            <objects>
+                <viewController id="E84-nG-aFz" userLabel="Stack Info View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NrW-wg-MjU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkq-Q9-gSX">
+                                <rect key="frame" x="16" y="16" width="327" height="658"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ci-y4-NYc" userLabel="Content">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="719.33333333333337"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6oJ-ce-Va2">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="719.33333333333337"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stack" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXo-gm-7NE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="327" height="40.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ymT-3u-nxK" userLabel="Separator">
+                                                        <rect key="frame" x="0.0" y="50.666666666666657" width="327" height="1"/>
+                                                        <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="Q5O-2W-g04"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMW-Yu-Of4">
+                                                        <rect key="frame" x="0.0" y="61.666666666666664" width="327" height="20.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXQ-Mx-xGw">
+                                                        <rect key="frame" x="0.0" y="92.000000000000028" width="327" height="385.66666666666674"/>
+                                                        <mutableString key="text">A stack is a data structure that enforce the last-in, first-out (LIFO) principle. The last item 'pushed' onto the stack is the first to be 'popped' off.  This is a analagous to a stack of dinner plates; in order to get to the bottom plate, you need to remove the plates above it first.  An example application for stacks is reversal of a word. First, each letter in the word is pushed onto the stack. Then each letter is popped off to obtain the reverrsed word.  Stacks can be utilized as an alternate technique for implementing recursive algorithms. Another application is </mutableString>
+                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Function Overview" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-MG-B5x">
+                                                        <rect key="frame" x="0.0" y="487.66666666666663" width="327" height="20.333333333333314"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv8-qh-Zed">
+                                                        <rect key="frame" x="0.0" y="518" width="327" height="120.33333333333337"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="- ">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="push">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="(value:): Adds the item onto the top of the stack. - ">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="pop">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="(): Returns the item from the top of the stack and removes it. - ">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="peek">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Bold"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="(): Returns the item from the top of the stack without removing it.">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time Complexity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pK0-BB-0w3" userLabel="Time Complexity">
+                                                        <rect key="frame" x="0.0" y="648.33333333333337" width="327" height="20.333333333333371"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o5b-uB-vbg">
+                                                        <rect key="frame" x="0.0" y="678.66666666666663" width="327" height="40.666666666666629"/>
+                                                        <attributedString key="attributedText">
+                                                            <fragment content="Insert (top of stack only) = O(1) Lookup (top of stack only) = O(1)">
+                                                                <attributes>
+                                                                    <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                    <font key="NSOriginalFont" size="17" name=".AppleSystemUIFont"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                        </attributedString>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="6oJ-ce-Va2" secondAttribute="bottom" id="Ugs-QO-HE5"/>
+                                            <constraint firstItem="6oJ-ce-Va2" firstAttribute="top" secondItem="3ci-y4-NYc" secondAttribute="top" id="We9-c5-eL2"/>
+                                            <constraint firstItem="6oJ-ce-Va2" firstAttribute="leading" secondItem="3ci-y4-NYc" secondAttribute="leading" id="oXq-Ub-TWo"/>
+                                            <constraint firstAttribute="trailing" secondItem="6oJ-ce-Va2" secondAttribute="trailing" id="wag-Sr-LrG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3ci-y4-NYc" secondAttribute="bottom" id="dIW-1t-lYR"/>
+                                    <constraint firstAttribute="trailing" secondItem="3ci-y4-NYc" secondAttribute="trailing" id="i1I-U5-ZJC"/>
+                                    <constraint firstItem="3ci-y4-NYc" firstAttribute="top" secondItem="nkq-Q9-gSX" secondAttribute="top" id="mpx-tD-JfB"/>
+                                    <constraint firstItem="3ci-y4-NYc" firstAttribute="leading" secondItem="nkq-Q9-gSX" secondAttribute="leading" id="nqW-MN-qJr"/>
+                                    <constraint firstItem="3ci-y4-NYc" firstAttribute="width" secondItem="nkq-Q9-gSX" secondAttribute="width" id="tcu-m3-VAt"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ROf-pk-JXd"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="45i-kv-KBV"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nkq-Q9-gSX" firstAttribute="leading" secondItem="Fey-PI-IrL" secondAttribute="leading" constant="16" id="Hit-Z4-ZXT"/>
+                            <constraint firstItem="Fey-PI-IrL" firstAttribute="bottom" secondItem="nkq-Q9-gSX" secondAttribute="bottom" constant="16" id="kAu-Ay-gR3"/>
+                            <constraint firstItem="Fey-PI-IrL" firstAttribute="trailing" secondItem="nkq-Q9-gSX" secondAttribute="trailing" constant="32" id="kff-bv-9YI"/>
+                            <constraint firstItem="nkq-Q9-gSX" firstAttribute="top" secondItem="Fey-PI-IrL" secondAttribute="top" constant="16" id="n5t-3k-405"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fey-PI-IrL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VTl-M3-02t"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7TD-xy-7WU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3550" y="808"/>
         </scene>
     </scenes>
     <resources>
