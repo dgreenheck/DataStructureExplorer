@@ -24,6 +24,10 @@
 		7D5E4E9B236BB9EF00D12829 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5E4E9A236BB9EF00D12829 /* Stack.swift */; };
 		7D5E4E9D236BBBA000D12829 /* StackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5E4E9C236BBBA000D12829 /* StackTests.swift */; };
 		7D5E4E9E236BBE3100D12829 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5E4E9A236BB9EF00D12829 /* Stack.swift */; };
+		7DE31590236CB5AE003485BC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE3158F236CB5AE003485BC /* Queue.swift */; };
+		7DE31592236CB8C4003485BC /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE31591236CB8C4003485BC /* QueueTests.swift */; };
+		7DE31593236CB912003485BC /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE3158F236CB5AE003485BC /* Queue.swift */; };
+		7DE31595236CC522003485BC /* QueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE31594236CC522003485BC /* QueueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +69,9 @@
 		7D5E4E98236B935D00D12829 /* ShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
 		7D5E4E9A236BB9EF00D12829 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		7D5E4E9C236BBBA000D12829 /* StackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTests.swift; sourceTree = "<group>"; };
+		7DE3158F236CB5AE003485BC /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		7DE31591236CB8C4003485BC /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		7DE31594236CC522003485BC /* QueueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +138,7 @@
 		7D5E4E74236A482B00D12829 /* DataStructureExplorerTests */ = {
 			isa = PBXGroup;
 			children = (
+				7DE31591236CB8C4003485BC /* QueueTests.swift */,
 				7D5E4E9C236BBBA000D12829 /* StackTests.swift */,
 				7D5E4E92236B5EB000D12829 /* LinkedListTests.swift */,
 				7D5E4E75236A482B00D12829 /* DataStructureExplorerTests.swift */,
@@ -153,6 +161,7 @@
 			children = (
 				7D5E4E90236B5A4B00D12829 /* LinkedList.swift */,
 				7D5E4E9A236BB9EF00D12829 /* Stack.swift */,
+				7DE3158F236CB5AE003485BC /* Queue.swift */,
 			);
 			path = "Data Structures";
 			sourceTree = "<group>";
@@ -163,6 +172,7 @@
 				7D5E4E62236A482800D12829 /* MainViewController.swift */,
 				7D5E4E95236B8F4200D12829 /* LinkedListViewController.swift */,
 				7D3BBDA0236BD44E00DE20C4 /* StackViewController.swift */,
+				7DE31594236CC522003485BC /* QueueViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -306,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DE31595236CC522003485BC /* QueueViewController.swift in Sources */,
 				7D5E4E63236A482800D12829 /* MainViewController.swift in Sources */,
 				7D3BBDA1236BD44E00DE20C4 /* StackViewController.swift in Sources */,
 				7D5E4E99236B935D00D12829 /* ShadowButton.swift in Sources */,
@@ -313,6 +324,7 @@
 				7D5E4E5F236A482800D12829 /* AppDelegate.swift in Sources */,
 				7D5E4E91236B5A4B00D12829 /* LinkedList.swift in Sources */,
 				7D5E4E96236B8F4200D12829 /* LinkedListViewController.swift in Sources */,
+				7DE31590236CB5AE003485BC /* Queue.swift in Sources */,
 				7D5E4E61236A482800D12829 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +334,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D5E4E9D236BBBA000D12829 /* StackTests.swift in Sources */,
+				7DE31593236CB912003485BC /* Queue.swift in Sources */,
+				7DE31592236CB8C4003485BC /* QueueTests.swift in Sources */,
 				7D5E4E9E236BBE3100D12829 /* Stack.swift in Sources */,
 				7D5E4E94236B5ECF00D12829 /* LinkedList.swift in Sources */,
 				7D5E4E93236B5EB000D12829 /* LinkedListTests.swift in Sources */,

@@ -36,19 +36,21 @@ public class Stack<T> {
             return self._count
         }
     }
+    ///Returns true if the stack is empty
+    public var isEmpty: Bool {
+        return (self.count == 0)
+    }
     
     /// Push a value onto the top of the stack
     ///
     /// - parameter value: The value to push onto the stack
     public func push(_ value: T) {
         let newTopNode = StackNode<T>(value)
-        
-        // Stack is empty
-        if self.top == nil {
+
+        if self.isEmpty {
             self.top = newTopNode
         }
         else {
-            // Insert node at top of stack
             newTopNode.next = self.top
             self.top = newTopNode
         }

@@ -8,86 +8,84 @@
 
 import XCTest
 
-class StackTests: XCTestCase {
+class QueueTests: XCTestCase {
 
-    private var uut: Stack<Int> = Stack()
+    private var uut: Queue<Int> = Queue()
     
     override func setUp() {
         uut = .init()
     }
     
     
-    // ----------------- push() ------------------- //
+    // ----------------- enqueue() ------------------- //
     
-    func test_push_ontoEmptyStack() {
+    func test_enqueue_ontoEmptyQueue() {
         // When
-        uut.push(5)
+        uut.enqueue(5)
         // Then
         XCTAssertTrue(uut.peek() == 5)
     }
     
-    func test_push_multipleItems() {
+    func test_enqueue_multipleItems() {
         // Given
-        uut.push(1)
-        uut.push(2)
+        uut.enqueue(5)
+        uut.enqueue(6)
         // When
-        uut.push(3)
+        uut.enqueue(7)
         // Then
-        XCTAssertTrue(uut.peek() == 3)
+        XCTAssertTrue(uut.peek() == 5)
         XCTAssertTrue(uut.count == 3)
     }
     
     
-    // ----------------- pop() ------------------- //
+    // ----------------- dequeue() ------------------- //
     
-    func test_pop_fromEmptyStack() {
+    func test_dequeue_fromEmptyQueue() {
         // When
-        let value: Int? = uut.pop()
+        let value: Int? = uut.dequeue()
         // Then
         XCTAssertNil(value)
         XCTAssertTrue(uut.isEmpty)
     }
     
-    func test_pop_singleItem() {
+    func test_dequeue_fromSingleItemQueue() {
         // Given
-        uut.push(5)
+        uut.enqueue(1)
         // When
-        let value: Int? = uut.pop()
+        let dequeuedValue: Int? = uut.dequeue()
         // Then
-        XCTAssertTrue(value == 5)
-        XCTAssertNil(uut.peek())
+        XCTAssertTrue(dequeuedValue == 1)
         XCTAssertTrue(uut.isEmpty)
     }
     
-    func test_pop_multipleItems() {
+    func test_dequeue_multipleItemsFromQueue() {
         // Given
-        uut.push(1)
-        uut.push(2)
-        uut.push(3)
+        uut.enqueue(1)
+        uut.enqueue(2)
+        uut.enqueue(3)
         // When
-        let firstValue: Int? = uut.pop()
-        let secondValue: Int? = uut.pop()
-        let thirdValue: Int? = uut.pop()
+        let firstValue: Int? = uut.dequeue()
+        let secondValue: Int? = uut.dequeue()
+        let thirdValue: Int? = uut.dequeue()
         // Then
-        XCTAssertTrue(firstValue == 3)
+        XCTAssertTrue(firstValue == 1)
         XCTAssertTrue(secondValue == 2)
-        XCTAssertTrue(thirdValue == 1)
-        XCTAssertNil(uut.peek())
+        XCTAssertTrue(thirdValue == 3)
         XCTAssertTrue(uut.isEmpty)
     }
     
     
     // ----------------- peek() ------------------- //
     
-    func test_peek_onEmptyStack() {
+    func test_peek_onEmptyQueue() {
         // Then
         XCTAssertNil(uut.peek())
         XCTAssertTrue(uut.isEmpty)
     }
     
-    func test_peek_onNonEmptyStack() {
+    func test_peek_onNonEmptyQueue() {
         // Given
-        uut.push(5)
+        uut.enqueue(5)
         // Then
         XCTAssertTrue(uut.peek() == 5)
         XCTAssertTrue(uut.count == 1)
@@ -96,14 +94,14 @@ class StackTests: XCTestCase {
     
     // ----------------- isEmpty() ------------------- //
     
-    func test_isEmpty_emptyStack() {
+    func test_isEmpty_emptyQueue() {
         // Then
         XCTAssertTrue(uut.isEmpty)
     }
     
-    func test_isEmpty_nonEmptyStack() {
+    func test_isEmpty_nonEmptyQueue() {
         // Given
-        uut.push(0)
+        uut.enqueue(0)
         // Then
         XCTAssertFalse(uut.isEmpty)
     }
