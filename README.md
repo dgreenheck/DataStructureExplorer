@@ -1,2 +1,11 @@
 # DataStructureExplorer
-iOS app for exploring and learning and data structures
+Sample iOS app for exploring and learning and data structures. All data structures were implemented with a test driven development (TDD) approach.
+
+## Data Structures
+- Stack
+- Queue
+- Binary Tree
+- General Tree
+- Min Heap
+- Linked List
+
